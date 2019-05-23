@@ -9,7 +9,7 @@ h1 {
   font-family: "Georgia";
 }
 
-p, h5, li {
+p, h5, li, input, button {
   font-family: "Gotham Book";
 }
 
@@ -35,17 +35,15 @@ h5 {
 }
 
 .nav-section {
-  display: inline-block;
-  padding: 0 5%;
-}
-.nav-section.title, .nav-section li, .nav-section a {
   text-transform: uppercase;
   font-size: 0.75em;
+}
+.nav-section p {
   text-align: center;
 }
 
 .title-font {
-  font-family: georgia;
+  font-family: Georgia;
   font-weight: 300;
   font-size: 2.5em;
 }
@@ -61,12 +59,10 @@ nav, footer {
   background-color: black;
   color: white;
   list-style: none;
-}
-nav .nav-items, footer .nav-items {
-  width: 45%;
+  padding: 0 5%;
 }
 nav .nav-items li, footer .nav-items li {
-  display: inline;
+  display: inline-table;
   padding: 1%;
 }
 nav .nav-items li:hover, footer .nav-items li:hover {
@@ -75,16 +71,47 @@ nav .nav-items li:hover, footer .nav-items li:hover {
 nav .nav-items li:active, footer .nav-items li:active {
   color: #CFB53B;
 }
-nav .language, nav .subscribe, footer .language, footer .subscribe {
+
+.language {
   max-width: 10%;
 }
-nav .language a, nav .subscribe a, footer .language a, footer .subscribe a {
+.language a {
   text-decoration: none;
   color: white;
   padding-left: 10%;
 }
-nav .language a:hover, nav .language a:active, nav .subscribe a:hover, nav .subscribe a:active, footer .language a:hover, footer .language a:active, footer .subscribe a:hover, footer .subscribe a:active {
+.language a:hover, .language a:active {
   color: #CFB53B;
+}
+
+.subscribe {
+  color: darkgray;
+  float: left;
+  padding: 1%;
+  align-items: center;
+}
+.subscribe form {
+  display: inline-block;
+}
+.subscribe form p {
+  margin: 0.5%;
+  font-size: 0.75em;
+  text-transform: none;
+  text-align: left;
+}
+.subscribe form input {
+  background-color: #505050;
+  border-color: #505050;
+  color: white;
+  padding: 5%;
+  font-size: 0.85em;
+}
+.subscribe form button {
+  background-color: #e7e7e7;
+  color: black;
+  border: none;
+  padding: 5%;
+  text-transform: uppercase;
 }
 
 .main {

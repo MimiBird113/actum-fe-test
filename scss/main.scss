@@ -9,7 +9,7 @@ h1 {
   font-family: 'Georgia';
 }
 
-p, h5, li {
+p, h5, li, input, button {
   font-family: 'Gotham Book';
 }
 
@@ -35,17 +35,15 @@ h5 {
 }
 
 .nav-section {
-  display: inline-block;
-  padding: 0 5%;
-  &.title, li, a {
-    text-transform: uppercase;
-    font-size: .75em;
+  text-transform: uppercase;
+  font-size: .75em;
+  p {
     text-align: center;
   }
 }
 
 .title-font {
-  font-family: georgia;
+  font-family: Georgia;
   font-weight: 300;
   font-size: 2.5em;
 }
@@ -61,10 +59,10 @@ nav, footer {
   background-color: black;
   color: white;
   list-style: none;
+  padding: 0 5%;
   .nav-items {
-    width: 45%;
     li {
-      display: inline;
+      display: inline-table;
       padding: 1%;
       &:hover {
         color: #CFB53B;
@@ -74,15 +72,46 @@ nav, footer {
       }
     }
   }
-  .language, .subscribe {
-    max-width: 10%;
-    a {
-      text-decoration: none;
+}
+
+.language{
+  max-width: 10%;
+  a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10%;
+    &:hover, &:active {
+      color: #CFB53B;
+    }
+  }
+}
+
+.subscribe {
+  color: darkgray;
+  float: left;
+  padding: 1%;
+  align-items: center;
+  form {
+    display: inline-block;
+    p {
+      margin: .5%;
+      font-size: .75em;
+      text-transform: none;
+      text-align: left;
+    }
+    input {
+      background-color: #505050;
+      border-color: #505050;
       color: white;
-      padding-left: 10%;
-      &:hover, &:active {
-        color: #CFB53B;
-      }
+      padding: 5%;
+      font-size: .85em;
+    }
+    button {
+      background-color: #e7e7e7;
+      color: black;
+      border: none;
+      padding: 5%;
+      text-transform: uppercase;
     }
   }
 }

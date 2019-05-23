@@ -3,36 +3,79 @@ body {
   background-color: white;
 }
 
-h1 {
+h1, h4 {
   display: flex;
   justify-content: center;
+  font-family: "Georgia";
 }
 
-.third-width {
-  width: 31%;
-  display: inline-block;
-  padding: 1%;
+p, h5, li {
+  font-family: "Gotham Book";
 }
-.third-width .title, .third-width li {
-  padding: 1%;
+
+h1 {
+  font-size: 3em;
+}
+
+.nav-section {
+  display: inline-block;
+  padding: 0 5%;
+}
+.nav-section.title, .nav-section li, .nav-section a {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.title-font {
+  font-family: georgia;
+  font-weight: 300;
+  font-size: 2.5em;
 }
 
 li {
   display: inline;
+  padding: 1%;
+}
+li:hover {
+  color: lightyellow;
+}
+li:active {
+  color: lightyellow;
+}
+
+.nav-items {
+  width: 45%;
+}
+
+.language, .subscribe {
+  max-width: 5%;
+}
+.language a, .subscribe a {
+  text-decoration: none;
+  color: white;
+}
+.language a:hover, .subscribe a:hover {
+  color: lightyellow;
+}
+.language a:active, .subscribe a:active {
+  color: lightyellow;
 }
 
 .svg {
-  max-width: 5%;
-  color: white;
+  max-width: 20%;
 }
 
 nav, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: black;
   color: white;
   list-style: none;
 }
-nav:hover, footer:hover {
-  color: lightyellow;
+nav.svg, footer.svg {
+  float: right;
 }
 
 .main {

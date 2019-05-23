@@ -3,7 +3,7 @@ body {
   background-color: white;
 }
 
-h1, h4 {
+h1 {
   display: flex;
   justify-content: center;
   font-family: "Georgia";
@@ -13,8 +13,25 @@ p, h5, li {
   font-family: "Gotham Book";
 }
 
+p {
+  font-size: 14px;
+  padding: 1% 0;
+}
+
 h1 {
   font-size: 3em;
+}
+
+h4 {
+  font-size: 2em;
+  font-family: "Georgia";
+  margin: 3% 0;
+}
+
+h5 {
+  color: #CFB53B;
+  font-size: 1.125em;
+  margin: 5% 0;
 }
 
 .nav-section {
@@ -33,37 +50,8 @@ h1 {
   font-size: 2.5em;
 }
 
-li {
-  display: inline;
-  padding: 1%;
-}
-li:hover {
-  color: lightyellow;
-}
-li:active {
-  color: lightyellow;
-}
-
-.nav-items {
-  width: 45%;
-}
-
-.language, .subscribe {
-  max-width: 5%;
-}
-.language a, .subscribe a {
-  text-decoration: none;
-  color: white;
-}
-.language a:hover, .subscribe a:hover {
-  color: lightyellow;
-}
-.language a:active, .subscribe a:active {
-  color: lightyellow;
-}
-
 .svg {
-  max-width: 20%;
+  max-width: 10%;
 }
 
 nav, footer {
@@ -74,8 +62,29 @@ nav, footer {
   color: white;
   list-style: none;
 }
-nav.svg, footer.svg {
-  float: right;
+nav .nav-items, footer .nav-items {
+  width: 45%;
+}
+nav .nav-items li, footer .nav-items li {
+  display: inline;
+  padding: 1%;
+}
+nav .nav-items li:hover, footer .nav-items li:hover {
+  color: #CFB53B;
+}
+nav .nav-items li:active, footer .nav-items li:active {
+  color: #CFB53B;
+}
+nav .language, nav .subscribe, footer .language, footer .subscribe {
+  max-width: 10%;
+}
+nav .language a, nav .subscribe a, footer .language a, footer .subscribe a {
+  text-decoration: none;
+  color: white;
+  padding-left: 10%;
+}
+nav .language a:hover, nav .language a:active, nav .subscribe a:hover, nav .subscribe a:active, footer .language a:hover, footer .language a:active, footer .subscribe a:hover, footer .subscribe a:active {
+  color: #CFB53B;
 }
 
 .main {
@@ -101,7 +110,19 @@ nav.svg, footer.svg {
 
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 16px;
+  padding: 2% 5%;
+}
+.container .svg {
+  max-width: 5%;
+}
+.container a {
+  align-items: center;
+}
+.container img {
+  padding: 0 1%;
+}
+.container a:last-child {
+  margin-left: 50%;
 }
 
 footer {

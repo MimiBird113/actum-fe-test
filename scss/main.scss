@@ -3,7 +3,7 @@ body {
   background-color: white;
 }
 
-h1, h4 {
+h1 {
   display: flex;
   justify-content: center;
   font-family: 'Georgia';
@@ -13,8 +13,25 @@ p, h5, li {
   font-family: 'Gotham Book';
 }
 
+p {
+  font-size: 14px;
+  padding: 1% 0;
+}
+
 h1 {
   font-size: 3em;
+}
+
+h4 {
+  font-size: 2em;
+  font-family: 'Georgia';
+  margin: 3% 0;
+}
+
+h5 {
+  color: #CFB53B;
+  font-size: 1.125em;
+  margin: 5% 0;
 }
 
 .nav-section {
@@ -33,37 +50,8 @@ h1 {
   font-size: 2.5em;
 }
 
-li {
-  display: inline;
-  padding: 1%;
-  &:hover {
-    color: lightyellow;
-  }
-  &:active {
-    color: lightyellow;
-  }
-}
-
-.nav-items {
-    width: 45%;
-}
-
-.language, .subscribe {
-  max-width: 5%;
-  & a {
-    text-decoration: none;
-    color: white;
-    &:hover {
-      color: lightyellow;
-    }
-    &:active {
-      color: lightyellow;
-    }
-  }
-}
-
 .svg {
-  max-width: 20%;
+  max-width: 10%;
 }
 
 nav, footer {
@@ -73,8 +61,29 @@ nav, footer {
   background-color: black;
   color: white;
   list-style: none;
-  &.svg {
-    float: right;
+  .nav-items {
+    width: 45%;
+    li {
+      display: inline;
+      padding: 1%;
+      &:hover {
+        color: #CFB53B;
+      }
+      &:active {
+        color: #CFB53B;
+      }
+    }
+  }
+  .language, .subscribe {
+    max-width: 10%;
+    a {
+      text-decoration: none;
+      color: white;
+      padding-left: 10%;
+      &:hover, &:active {
+        color: #CFB53B;
+      }
+    }
   }
 }
 
@@ -101,7 +110,19 @@ nav, footer {
 
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 16px;
+  padding: 2% 5%;
+  .svg {
+    max-width: 5%;
+  }
+  a {
+    align-items: center;
+  }
+  img {
+    padding: 0 1%;
+  }
+  a:last-child {
+    margin-left: 50%;
+  }
 }
 
 footer {

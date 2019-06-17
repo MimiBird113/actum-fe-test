@@ -23,14 +23,14 @@ h1 {
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.75em;
   font-family: 'Georgia';
   margin: 3% 0;
 }
 
 h5 {
   color: #CFB53B;
-  font-size: 1.125em;
+  font-size: 1em;
   margin: 5% 0;
 }
 
@@ -54,52 +54,70 @@ h5 {
 
 nav, footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: black;
   color: white;
   list-style: none;
   padding: 0 5%;
-  .icon {
-    color: white;
-  }
   .nav-items {
-    width: 100%;
-    flex-wrap: nowrap;
+    flex: 1;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
     li {
-      display: inline;
-      padding: 1%;
+      display: block;
+      text-align: center;
+      padding: 1.5%;
+      @media screen and (min-width: 768px) {
+        float: left;
+      }
       &:hover {
         color: #CFB53B;
+        cursor: pointer;
       }
       &:active {
         color: #CFB53B;
       }
     }
+    a {
+      color: white;
+      text-decoration: none;
+      padding-left: 1%;
+      &:hover, &:active {
+        color: #CFb53b;
+      }
+    }
+    .language {
+      @media screen and (min-width: 768px) {
+        margin-left: 14%;
+      }
+    }
+    #hide {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
+    .right {
+      float: right;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .mobile-right {
+      display: flex;
+      float: right;
+      @media screen and (min-width: 768px) {
+        float: none;
+      }
+    }
+    .icon {
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
   }
 }
 
-.language {
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  align-items: center;
-  a {
-    text-decoration: none;
-    color: white;
-    padding-left: 10%;
-    &:hover, &:active {
-      color: #CFB53B;
-    }
-  }
-  .hide {
-    max-width: 20%;
-    margin: 0 0 0 70%;
-  }
-  .search {
-    width: 50%;
-    margin: 0 0 0 85%;
-  }
-}
 
 .subscribe {
   color: darkgray;
@@ -137,17 +155,9 @@ nav, footer {
   padding-bottom: 5%;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 1%;
-}
-
-.card {
-  /* Add shadows to create the "card" effect */
+ .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   background-color: white;
-  width: 30%;
   float: left;
   margin: 1%;
   &:hover {
@@ -158,6 +168,12 @@ nav, footer {
     display: table;
     clear: both;
   }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1%;
 }
 
 /* Add some padding inside the card container */
@@ -177,6 +193,108 @@ nav, footer {
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+
+
+/*Flex items*/
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-item {
+	display: flex;
+  padding: 0.5em;
+	width: 100%;
+}
+@media all and (min-width: 60em) {
+  .list-item {
+    width: 30%;
+    margin: 0 1%;
+  }
+}
+@media all and (max-width: 59em) {
+  .list-item {
+    width: 90%;
+		margin: 0 5%;
+  }
+}
+.list-content {
+	background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+	width: 100%;
+}
+.list-content p {
+	flex: 1 0 auto;
+}
+
+.list-content .container {
+	padding: 1em;
+}
+
+
 footer {
   clear: both;
+  display: block;
+  align-content: center;
+  float: right;
+  text-align: center;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    float: none;
+  }
+  .nav-section {
+    display: block;
+    clear: both;
+    width: 100%;
+    margin: 5% 0;
+    @media screen and (min-width: 768px) {
+      margin: 1%;
+      width: 20%;
+    }
+    .nav-items {
+      li {
+        width: 100%;
+        display: block;
+        text-align: center;
+        align-content: center;
+        padding: 10%;
+        @media screen and (min-width: 768px) {
+          display: inline-block;
+          margin-left: 1%;
+          clear: none;
+          padding: 0;
+          width: 25%;
+        }
+      }
+    }
+    p, li, input, button {
+      text-align: center;
+      font-size: 1em;
+      @media screen and (min-width: 768px) {
+        max-width: 60%;
+      }
+    }
+    .newsletter {
+      @media screen and (min-width: 768px) {
+      text-align: left;
+      padding-left: 10%;
+      max-width: 100%;
+      }
+    }
+  }
 }

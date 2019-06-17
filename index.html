@@ -4,12 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Actum Front End Task</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="fonts/gotham-cufonfonts-webfont/style.css">
     <link rel="stylesheet" type="text/css" href="fonts/georgia/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif" crossorigin="anonymous"></script>
+
+    <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
@@ -19,7 +24,7 @@
       <br>beauty institute</p>
     </div>
     <div class="nav-section nav-items">
-      <div class="hide">
+      <div id="hide">
         <ul>
           <li>Home</li>
           <li>Products</li>
@@ -27,127 +32,153 @@
           <li>Loyalty Program</li>
           <li>Gallery</li>
           <li>Contact</li>
+          <li class="language"><a href="#">CZ</a></li>
+          <li><a href="#">EN</a></li>
+          </ul>
+       </div>
+         <ul>
+          <li class="mobile-right"><a><i class="fas fa-search search"></i></a></li>
+          <li class="right">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
         </ul>
-      </div>
     </div>
-    <div class="nav-section language">
-      <div class="hide">
-        <a href="#">CZ</a>
-        <a href="#">EN</a>
-      </div>
-      <div class="search">
-        <a href="#"><img src="img/search-white.svg" class="svg" alt="search icon"/></a>
-      </div>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
   </nav>
 
+
+
   <section class="main">
-    <h1>Our Blog</h1>
     <div class="cards carousel-wrapper">
-      <div class="carousel">
-        <div class="card initial">
-        <img src="http://satyr.io/200-250x150" class="" alt="blog image" style="width:100%">
-        <div class="container">
-          <h4><b>Spring Collection</b></h4>
-          <h5><span>... it's as full of beauty as it is joy!</span></h5>
-          <p>The Lancome Spring Collection is here and over in Paris we
-            are certainly having the weather to go with it! The sun came out
-          last week and she hasn't left us since. Parisians have been</p>
-          <a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
-          <a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
-          <a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
-        </div>
-      </div>
+    <div class="carousel">
 
-      <div class="card">
-        <img src="http://satyr.io/200-250x150" class="" alt="blog image" style="width:100%">
-        <div class="container">
-          <h4><b>Beauty Essentials</b></h4>
-          <h5><span>So here are my Ski Week essentials</span></h5>
-          <p>After holidays, the French love to ride out the tail end of
-          winter on a pair of skis in the snowy Alps. As a long time skier
-          myself, I couldn't miss my annual invitation to hit the slopes</p>
-          <a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
-          <a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
-          <a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
-        </div>
-      </div>
+		<ul class="list">
+			<li class="list-item">
+				<div class="list-content">
+					<div class="card initial">
+						<img src="http://satyr.io/200-250x150" class="" alt="blog image" style="width:100%">
+						<div class="container">
+							<h4><b>Spring Collection</b></h4>
+							<h5><span>... it's as full of beauty as it is joy!</span></h5>
+							<p>The Lancome Spring Collection is here and over in Paris we
+								are certainly having the weather to go with it! The sun came out
+							last week and she hasn't left us since. Parisians have been</p>
+              <a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
+              <a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
+              <a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
+						</div>
+					</div>
+				</div>
+			</li>
 
-      <div class="card ">
-        <img src="http://satyr.io/200-250x150" class="" alt="blog image" style="width:100%">
-        <div class="container">
-          <h4><b>Amour is in the air</b></h4>
-          <h5><span>Valentine's Day is for everyone</span></h5>
-          <p>They say heaven is where the chefs are Italian, the mechanics are
-          German, the police are British, and the lovers are... French. If
-          that's true, it's just another reason why I am lucky to have</p>
-          <a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
-          <a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
-          <a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
-        </div>
-      </div>
+			 <li class="list-item">
+				<div class="list-content">
+					<div class="card">
+						<img src="http://satyr.io/200-250x150" class="" alt="blog image" style="width:100%">
+						<div class="container">
+							<h4><b>Beauty Essentials</b></h4>
+							<h5><span>So here are my Ski Week essentials</span></h5>
+							<p>After holidays, the French love to ride out the tail end of
+							winter on a pair of skis in the snowy Alps. As a long time skier
+							myself, I couldn't miss my annual invitation to hit the slopes</p>
+              <a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
+              <a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
+              <a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
+						</div>
+					</div>
+				</div>
+			</li>
 
-      <div class="card ">
-        <img src="http://satyr.io/200-250x150" alt="blog image" style="width:100%">
-        <div class="container">
-          <h4><b>Need a lift?</b></h4>
-          <h5><span>Along with all that lifting of course</span></h5>
-          <p>What are you doing tonight? Do you need a lift? Non non, I don't mean
-          a ride. If it's as cold there as it is here my bet is you're staying inside
-          tonight. What a perfect excuse for one</p>
-          <a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
-          <a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
-          <a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
-        </div>
-      </div>
+			<li class="list-item">
+				<div class="list-content">
+					<div class="card ">
+						<img src="http://satyr.io/200-250x150" class="" alt="blog image" style="width:100%">
+						<div class="container">
+							<h4><b>Amour is in the air</b></h4>
+							<h5><span>Valentine's Day is for everyone</span></h5>
+							<p>They say heaven is where the chefs are Italian, the mechanics are
+							German, the police are British, and the lovers are... French. If
+							that's true, it's just another reason why I am lucky to have</p>
+              <a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
+              <a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
+              <a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
+						</div>
+					</div>
+				</div>
+			</li>
 
-      <div class="card ">
-        <img src="http://satyr.io/200-250x150" alt="blog image" style="width:100%">
-        <div class="container">
-          <h4><b>Lady pink</b></h4>
-          <h5><span>Happiness through self expression</span></h5>
-          <p>In a little corner of my Parisian apartment I have every single bottle of
-          La Vie Est Belle that I own displayed. The one engraved with my name, the
-          Eau de Toilette, L'Eclat, and so</p>
-          <a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
-          <a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
-          <a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
-        </div>
-      </div>
+			<li class="list-item">
+				<div class="list-content">
+					<div class="card ">
+						<img src="http://satyr.io/200-250x150" alt="blog image" style="width:100%">
+						<div class="container">
+							<h4><b>Need a lift?</b></h4>
+							<h5><span>Along with all that lifting of course</span></h5>
+							<p>What are you doing tonight? Do you need a lift? Non non, I don't mean
+							a ride. If it's as cold there as it is here my bet is you're staying inside
+							tonight. What a perfect excuse for one</p>
+							<a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
+							<a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
+							<a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
+						</div>
+					</div>
+				</div>
+			</li>
 
-      <div class="card ">
-        <img src="http://satyr.io/200-250x150" alt="blog image" style="width:100%">
-        <div class="container">
-          <h4><b>Bird's eye view</b></h4>
-          <h5><span>Paris's best lookout spots</span></h5>
-          <p>Lately I've been seeing a lot of these articles going around the internet.
-          You know... the ones that tell you where the most instagrammable spots are.
-          That's one way to see a place. But</p>
-          <a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
-          <a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
-          <a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
-        </div>
-      </div>
-    </div>
+			<li class="list-item">
+				<div class="list-content">
+					<div class="card ">
+						<img src="http://satyr.io/200-250x150" alt="blog image" style="width:100%">
+						<div class="container">
+							<h4><b>Lady pink</b></h4>
+							<h5><span>Happiness through self expression</span></h5>
+							<p>In a little corner of my Parisian apartment I have every single bottle of
+							La Vie Est Belle that I own displayed. The one engraved with my name, the
+							Eau de Toilette, L'Eclat, and so</p>
+							<a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
+							<a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
+							<a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
+						</div>
+					</div>
+				</div>
+			</li>
 
-    <div class="blogSlider__dots" style="text-align:center">
-      <span class="blogSlider__dots--dot" onclick="currentSlide(1)"></span>
-      <span class="blogSlider__dots--dot" onclick="currentSlide(2)"></span>
-      <span class="blogSlider__dots--dot" onclick="currentSlide(3)"></span>
-      <span class="blogSlider__dots--dot" onclick="currentSlide(4)"></span>
-      <span class="blogSlider__dots--dot" onclick="currentSlide(5)"></span>
-      <span class="blogSlider__dots--dot" onclick="currentSlide(6)"></span>
-    </div>
-    </div>
+
+				<li class="list-item">
+				<div class="list-content">
+					<div class="card ">
+						<img src="http://satyr.io/200-250x150" alt="blog image" style="width:100%">
+						<div class="container">
+							<h4><b>Bird's eye view</b></h4>
+							<h5><span>Paris's best lookout spots</span></h5>
+							<p>Lately I've been seeing a lot of these articles going around the internet.
+							You know... the ones that tell you where the most instagrammable spots are.
+							That's one way to see a place. But</p>
+							<a><img src="img/heart.svg" class="svg" alt="heart icon"/>485</a>
+							<a><img src="img/comment.svg" class="svg" alt="comment icon"/>167</a>
+							<a><img src="img/clock-outline.svg" class="svg" alt="clock icon"/>16h</a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+			<div class="carousel__button--next"></div>
+      <div class="carousel__button--prev"></div>
+
+	</div>
+</div>
   </section>
 
+
   <footer>
-    <div class="nav-section title">
-      <p><span class="title-font">Lanc&ocirc;me</span>
-      <br>beauty institute</p>
+    <div class="nav-section subscribe">
+      <form>
+        <p class="newsletter">Subscribe to our newsletter</p>
+        <input type="email" name="email address" value="Email Address">
+        <button>ok</button>
+      </form>
     </div>
     <div class="nav-section nav-items">
       <ul>
@@ -159,12 +190,9 @@
         <li>Contact</li>
       </ul>
     </div>
-    <div class="nav-section subscribe">
-      <form>
-        <p>Subscribe to our newsletter</p>
-        <input type="email" name="email address" value="Email Address">
-        <button>ok</button>
-      </form>
+    <div class="nav-section title">
+      <p><span class="title-font">Lanc&ocirc;me</span>
+      <br>beauty institute</p>
     </div>
   </footer>
 

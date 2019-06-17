@@ -1,0 +1,36 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Georgia';
+}
+
+p, h5, li, input, button {
+  font-family: 'Gotham Book';
+}
+
+p {
+  font-size: 14px;
+  padding: 1% 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h4 {
+  font-size: 1.75em;
+  font-family: 'Georgia';
+  margin: 3% 0;
+}
+
+h5 {
+  color: #CFB53B;
+  font-size: 1em;
+  margin: 5% 0;
+}
+
+.title-font {
+  font-family: Georgia;
+  font-weight: 300;
+  font-size: 2.5em;
+}

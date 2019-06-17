@@ -8,7 +8,7 @@ function myFunction() {
   }
 }
 
-//carousel functions 
+//carousel functions
 
 !(function(d){
 		// Variables to target our base class,  get carousel items, count how many carousel items there are, set the slide to 0 (which is the number that tells us the frame we're on), and set motion to true which disables interactivity.

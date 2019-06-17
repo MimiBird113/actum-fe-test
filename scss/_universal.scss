@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+
+.svg {
+  max-width: 10%;
+}
+
+body {
+  padding: 0 5%;
+  background-color: white;
+}
+
+.main {
+  margin: 3%;
+}
